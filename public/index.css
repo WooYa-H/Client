@@ -51,12 +51,20 @@ button {
 }
 
 #result-list {
-  list-style: none;
-  padding: 0;
+  /* Removed list-style for table display */
 }
 
-#result-list li {
+#result-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#result-list th,
+#result-list td {
   padding: 10px;
   border: 1px solid #ccc;
-  margin-bottom: 5px;
+}
+
+#result-list thead {
+  background-color: #f2f2f2;
 }
