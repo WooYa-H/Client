@@ -1,47 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>농작물 및 노사</title>
-  <link rel="stylesheet" href="index.css">
+  <title>Excel Upload App</title>
 </head>
 <body>
-  <div class="container">
-    <h1>농작물 및 노사 데이터 업로드 및 불일치 확인</h1>
-    <div class="upload-section">
-      <h3>농작물 데이터 업로드</h3>
-      <form id="crop-upload-form">
-        <label for="crop-file-input">Excel 파일 선택:</label>
-        <input type="file" id="crop-file-input" name="file">
-        <label for="crop-month-input">월:</label>
-        <input type="number" id="crop-month-input" name="month">
-        <button type="button" id="crop-upload-button">업로드</button>
-      </form>
-    </div>
-
-    <div class="upload-section">
-      <h3>노사 데이터 업로드</h3>
-      <form id="nh-upload-form">
-        <label for="nh-file-input">Excel 파일 선택:</label>
-        <input type="file" id="nh-file-input" name="file">
-        <label for="nh-month-input">월:</label>
-        <input type="number" id="nh-month-input" name="month">
-        <button type="button" id="nh-upload-button">업로드</button>
-      </form>
-    </div>
-
-    <div id="result-container">
-      <h2>불일치 데이터</h2>
-      <ul id="result-list"></ul>
-      <form id="result-from">
-        <label for="result-month-input">월:</label>
-        <input type="number" id="result-month-input" name="month">
-        <button type="button" id="result-button">조회</button>
-      </form>
-    </div>
-  </div>
-
-  <script src="client.js"></script>
+  <div id="root"></div>
 </body>
 </html>
