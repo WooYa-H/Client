@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import UploadCropFile from './components/UploadCropFile';
-import UploadNhFile from './components/UploadNhFile';
-import DisplayResults from './components/DisplayResults';
-import DisplayNhData from './components/DisplayNhData';
+import UploadCropFile from './components/excel/UploadCropFile';
+import UploadNhFile from './components/excel/UploadNhFile';
+import DisplayResults from './components/excel/DisplayResults';
+import DisplayNhData from './components/excel/DisplayNhData';
 
 function App() {
   return (
