@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import UploadCropFile from './components/excel/UploadCropFile';
-import UploadNhFile from './components/excel/UploadNhFile';
-import DisplayResults from './components/excel/DisplayResults';
-import DisplayNhData from './components/excel/DisplayNhData';
+import Home from './pages/Home';
+import UploadCropPage from './pages/UploadCropPage';
+import UploadNhPage from './pages/UploadNhPage';
+import DisplayResultsPage from './pages/DisplayResultsPage';
+import DisplayNhDataPage from './pages/DisplayNhDataPage';
+import './App.css'; // Import the CSS file
 
 function App() {
   return (
@@ -19,11 +21,11 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/upload-crop" element={<UploadCropFile />} />
-          <Route path="/upload-nh" element={<UploadNhFile />} />
-          <Route path="/display-results" element={<DisplayResults />} />
-          <Route path="/display-nh-data" element={<DisplayNhData />} />
-          <Route path="/" element={<h2>Welcome to the Excel Upload and Matching App</h2>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/upload-crop" element={<UploadCropPage />} />
+          <Route path="/upload-nh" element={<UploadNhPage />} />
+          <Route path="/display-results" element={<DisplayResultsPage />} />
+          <Route path="/display-nh-data" element={<DisplayNhDataPage />} />
         </Routes>
       </div>
     </Router>
