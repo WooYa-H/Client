@@ -11,13 +11,13 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1>Excel Upload and Matching App</h1>
+        <h1>엑셀 비교하기</h1>
         <nav>
           <ul>
-            <li><Link to="/upload-crop">Upload Crop File</Link></li>
-            <li><Link to="/upload-nh">Upload Nh File</Link></li>
-            <li><Link to="/display-results">Display Results</Link></li>
-            <li><Link to="/display-nh-data">Display Nh Data</Link></li>
+            <li><Link to="/upload-crop">위임내역 업로드</Link></li>
+            <li><Link to="/upload-nh">농손 업로드</Link></li>
+            <li><Link to="/display-results">결과 조회</Link></li>
+            <li><Link to="/display-nh-data">데이터 비교하기</Link></li>
           </ul>
         </nav>
         <Routes>

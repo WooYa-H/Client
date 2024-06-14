@@ -3,20 +3,27 @@
     text-align: center;
   }
   
+  nav {
+    background-color: #0047ab;
+    padding: 10px 0;
+  }
+  
   nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
   nav li {
-    margin: 0 10px;
+    margin: 0 15px;
   }
   
   nav a {
     text-decoration: none;
-    color: #007bff;
+    color: white;
+    font-size: 18px;
   }
   
   nav a:hover {
@@ -28,7 +35,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 30vh; /* Viewport height */
+    height: 15vh;
     padding: 20px;
   }
   
